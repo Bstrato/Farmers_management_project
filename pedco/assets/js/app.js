@@ -144,9 +144,13 @@ $(document).ready(function($) {
 	// Datetimepicker
 	if($('.datetimepicker').length > 0) {
 		$('.datetimepicker').datetimepicker({
-			format: 'DD/MM/YYYY'
+			format: 'DD-MM-YYYY',
+                        ignoreReadonly: true,
+                        viewMode: 'years'
 		});
 	}
+        
+       
 	
 	// Datatable
 	if($('.datatable').length > 0) {

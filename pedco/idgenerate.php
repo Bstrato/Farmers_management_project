@@ -57,12 +57,20 @@ include 'mainheader/dbcon.php';
  }
 
 
+  function fetch_farmers($conn){
+
+       $query = "SELECT * from farmer";
+
+       $sql_records = mysqli_query($conn,$query);
+
+       return $sql_records;
+ }
 
 function re_create_code($code) {
 
         $trailing_code = substr($code , -6);
-$res = (int) $trailing_code+1;
-$res = (string) $res;
+        $res = (int) $trailing_code+1;
+        $res = (string) $res;
 
 
 

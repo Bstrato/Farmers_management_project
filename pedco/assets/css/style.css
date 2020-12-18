@@ -59,6 +59,14 @@ Version      : 3.2
 html {
 	height: 100%;
 }
+
+.bootstrap-datetimepicker-widget table th.prev,.bootstrap-datetimepicker-widget table th.next{
+    
+    background-color:#428bca !important;
+   
+}
+
+
 body {
 	font-family: 'Muli', sans-serif;
 	font-size: 0.875rem;

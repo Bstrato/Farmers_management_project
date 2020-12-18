@@ -158,6 +158,14 @@ $code = create_code($conn);
 
 
 <script type="text/javascript">
+
+
+     $(document).ready(function() {
+
+       
+       
+
+      });
     
     function mess()
     {
