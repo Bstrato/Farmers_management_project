@@ -35,26 +35,7 @@ if(isset($_POST['submit'])){
     	exit;
   }
 
-/*
-      $row = mysqli_fetch_array($query);
-      $uid= $row["id"];
-      $name= $row["username"];
-		$level=$row["level"];
-      
-      if ($level==1) {
 
-       header("location: dashboard.php");
-
-      }else{
-
-      	header("location: add_farmer.php");
-
-      	exit;
-
-      }
-
-  }
-*/
 }
 
 }
