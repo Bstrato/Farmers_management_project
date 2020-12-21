@@ -19,25 +19,21 @@ if(isset($_POST['submit'])){
  $password=$_POST['password'];
 	
  
-$query = mysqli_query($conn,"SELECT username, password, level from login WHERE username= $username AND password=$password");
+ $query = mysqli_query($conn,"SELECT username, password, level from login WHERE username=$username AND password=$password");
     //$rows = mysqli_num_rows($query);
     
+ $result = mysqli_num_rows($query);
 
-    if($query == true) {
+  if($result==1){
 
+           header("location: dashboard.php");
 
-    	 header("location: dashboard.php");
+       } else {
 
-}
-    else{
-
-    	header("location: add_farmer.php");
+         header("location: add_farmer.php");
 
     	exit;
-    }
-      
-
-
+  }
 
 /*
       $row = mysqli_fetch_array($query);
