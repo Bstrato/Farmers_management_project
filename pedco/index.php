@@ -21,7 +21,7 @@
         <div class="account-page">
 			<div class="account-center">
 				<div class="account-box">
-                    <form action="dashboard.php" class="form-signin" autocomplete="off">
+                    <form action="login.php" method="post" class="form-signin" autocomplete="off">
 						<div class="account-logo">
                             <a href="dashboard.php"></a>
                         </div>
